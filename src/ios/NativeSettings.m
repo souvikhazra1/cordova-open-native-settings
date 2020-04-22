@@ -14,12 +14,12 @@
 {
 	CDVPluginResult* pluginResult = nil;
 	NSString* key = [command.arguments objectAtIndex:0];
-	NSString* prefix = @"App-Prefs:";
+	NSString* prefix = @"prefs:";
 	BOOL result = NO;
 
-	if(SYSTEM_VERSION_LESS_THAN(@"11.3")){
+	/*if(SYSTEM_VERSION_LESS_THAN(@"11.3")){
         prefix = @"app-settings:";
-    }
+    }*/
 
 	
     if ([key isEqualToString:@"application_details"]) {

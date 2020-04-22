@@ -92,6 +92,7 @@ Setting constant | Description
 "storage" | Show settings for internal storage
 "store" | Open the Play Store page of the current application
 "sync" | Show settings to allow configuration of sync settings
+"tethering" | Show settings to allow configuration of hotspot and tethering
 "usage" | Show settings to control access to usage information
 "user_dictionary" | Show settings to manage the user input dictionary
 "voice_input" | Show settings to configure input methods, in particular allowing the user to enable input methods
