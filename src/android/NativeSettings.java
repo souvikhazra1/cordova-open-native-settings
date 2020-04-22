@@ -152,6 +152,9 @@ public class NativeSettings extends CordovaPlugin {
         	intent = new Intent(android.provider.Settings.ACTION_WIFI_SETTINGS);
         } else if (action.equals("wireless")) {
             intent = new Intent(android.provider.Settings.ACTION_WIRELESS_SETTINGS);
+        } else if (action.equals("tethering")) {
+            intent = new Intent();
+            intent.setClassName("com.android.settings", "com.android.settings.TetherSettings");
         } else {
              status = PluginResult.Status.INVALID_ACTION;
              callbackContext.sendPluginResult(new PluginResult(status, result));
